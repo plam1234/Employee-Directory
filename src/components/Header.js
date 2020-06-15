@@ -1,24 +1,21 @@
-import React from 'react';
+import React from "react";
 
-function Header() {
+export default () => {
 	return (
-		<div style={styles.header} className="jumbotron jumbotron-fluid">
+		<div style={styles.header} className="jumbotron jumbotron-fluid bg-info">
 			<div className="container">
 				<h1 className="display-4">Employee Directory</h1>
-				<p className="lead">Search for your teammates by name.</p>
+				<p>Get to know your team</p>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
 const styles = {
 	header: {
-		backgroundColor: "navy",
+		marginBottom: 0,
 		color: "white",
 		display: "flex",
 		textAlign: "center",
-		margin: 0
-	}
-}
-
-export default Header;
+	},
+};

@@ -1,21 +1,14 @@
-import React from 'react';
-//import './App.css';
+import React from "react";
 import Header from "./components/Header";
-import Search from "./components/Search";
-
+import SearchBar from "./components/SearchBar";
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<Header />
-			</header>
-			<div>
-				<Search />
-			</div>
+		<div>
+			<Header />
+			<SearchBar />
 		</div>
 	);
 }
-
 
 export default App;

@@ -1,9 +1,9 @@
 import React from "react";
+
 export default ({ employees }) => {
 	return (
 		<tbody>
 			{employees
-				.sort((a, b) => (a.name > b.name ? 1 : -1))
 				.map((employee) => (
 					<tr key={employee.id}>
 						<td>
@@ -24,6 +24,7 @@ export default ({ employees }) => {
 		</tbody>
 	);
 };
+
 const styles = {
 	image: {
 		width: 50,
